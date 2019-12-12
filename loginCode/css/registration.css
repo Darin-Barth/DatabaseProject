@@ -9,7 +9,7 @@
 }
 
 .bg-image {
-    background-image: url("/img/bakery-background.jpg");
+    background-image: url("/loginCode/img/bakery-background.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -53,7 +53,11 @@
 }
 
 .btn-1 {
-    background-color: #ffb33a;
+    background-color: #FFC629;
+}
+
+.text-uppercase {
+    color: #503629
 }
 
 .form-label-group {

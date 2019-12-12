@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
@@ -9,10 +8,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/css/registration.css">
+        <link rel="stylesheet" href="/loginCode/css/registration.css">
     </head>
-    
-    
     <body>
         <div class="container-fluid">
             <div class="row no-gutter">
@@ -22,7 +19,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-9 col-lg-8 mx-auto">
-                                    <a href="home.html"><img src="/images/bakery-logo.png" class="rounded mx-auto d-block pb-5" alt="Butternut Bakery Logo" width="300px"></a>
+                                    <a href="home.html"><img src="/loginCode/img/bakery-logo.png" class="rounded mx-auto d-block pb-5" alt="Butternut Bakery Logo" width="300px"></a>
                                     <form>
                                         <div class="form-label-group">
                                             <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
@@ -30,20 +27,20 @@
                                         </div>
 
                                         <div class="form-label-group">
-                                            <input type="name" id="inputName" class="form-control" placeholder="Name" required autofocus>
-                                            <label for="inputName">Name</label>
+                                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                            <label for="inputPassword">Password</label>
                                         </div>
 
-                                        <div class="form-label-group">
-                                            <input onkeyup='check();' type="password" id="password" class="form-control" placeholder="Password" required>
-                                            <label for="password">Password</label>
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Remember password</label>
                                         </div>
-                                        <div class="form-label-group">
-                                            <input onkeyup='check();' type="password" id="confirm_password" class="form-control" placeholder="PasswordConfirm" required>
-                                            <label for="confirm_password"> Confirm Password</label>
-                                        </div>
+                                        <button class="btn btn-lg btn-1 btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                                        <button onclick="window.location.href = 'registration.html';"class="btn btn-lg btn-1 btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Register</button>
 
-                                        <button onclick="window.location.href = 'login.html';" class="btn btn-lg btn-1 btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Register</button>
+                                        <div class="text-center">
+                                            <a class="small" style="color:black" href="#">Forgot password?</a>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
@@ -52,17 +49,8 @@
                 </div>
             </div>
         </div>
-        <script>
-            var check = function() {
-                if (document.getElementById('password').value ==
-                    document.getElementById('confirm_password').value) {
-                    document.getElementById('message').style.color = 'green';
-                    document.getElementById('message').innerHTML = 'matching';
-                } else {
-                    document.getElementById('message').style.color = 'red';
-                    document.getElementById('message').innerHTML = 'not matching';
-                }
-            }
-        </script>
+
+
+
     </body>
 </html>
