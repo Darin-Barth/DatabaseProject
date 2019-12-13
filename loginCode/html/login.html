@@ -8,7 +8,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/loginCode/css/registration.css">
+        <link rel="stylesheet" href="css/registration.css">
     </head>
     <body>
         <div class="container-fluid">
@@ -19,7 +19,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-9 col-lg-8 mx-auto">
-                                    <a href="home.html"><img src="/loginCode/img/bakery-logo.png" class="rounded mx-auto d-block pb-5" alt="Butternut Bakery Logo" width="300px"></a>
+                                    <a href="/indexCode/index.html"><img src="img/bakery-logo.png" class="rounded mx-auto d-block pb-5" alt="Butternut Bakery Logo" width="400px"></a>
                                     <form>
                                         <div class="form-label-group">
                                             <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
@@ -35,12 +35,8 @@
                                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                                             <label class="custom-control-label" for="customCheck1">Remember password</label>
                                         </div>
-                                        <button class="btn btn-lg btn-1 btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                                        <button onclick="window.location.href = '/adminCode/index.php';"class="btn btn-lg btn-1 btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
                                         <button onclick="window.location.href = 'registration.html';"class="btn btn-lg btn-1 btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Register</button>
-
-                                        <div class="text-center">
-                                            <a class="small" style="color:black" href="#">Forgot password?</a>
-                                        </div>
                                     </form>
                                 </div>
                             </div>
@@ -49,8 +45,5 @@
                 </div>
             </div>
         </div>
-
-
-
     </body>
 </html>
